@@ -28,7 +28,6 @@ public class BookingSteps{
         homePage.navigateToHomePage();
 
     }
-
     @When("I browse through the page")
     public void i_browse_through_the_page() {
         homePage.goToRoomsCategory();

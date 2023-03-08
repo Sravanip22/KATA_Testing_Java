@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6595000000,
+              "duration": 7419000000,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-08T13:58:52.565Z",
+        "start_timestamp": "2023-03-08T14:10:40.748Z",
         "line": 41,
         "name": "book the room for past date",
         "description": "",
@@ -32,7 +32,7 @@
         "after": [
           {
             "result": {
-              "duration": 652000000,
+              "duration": 703000000,
               "status": "passed"
             },
             "match": {
@@ -45,7 +45,7 @@
         "steps": [
           {
             "result": {
-              "duration": 172000000,
+              "duration": 178000000,
               "status": "passed"
             },
             "line": 42,
@@ -57,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 804000000,
+              "duration": 822000000,
               "status": "passed"
             },
             "line": 43,
@@ -87,7 +87,7 @@
           },
           {
             "result": {
-              "duration": 449000000,
+              "duration": 445000000,
               "status": "passed"
             },
             "line": 44,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 5065000000,
+              "duration": 5084000000,
               "status": "passed"
             },
             "line": 45,
@@ -117,8 +117,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Given error message key is incorrect\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat features.step_definitions.BookingSteps.errorMessageAppears(BookingSteps.java:140)\r\n\tat ✽.error message \"invalid\" appears(file:///C:/Users/Sunil/IdeaProjects/KATA_Testing_Java/src/test/java/features/booking.feature:46)\r\n",
-              "duration": 2000000,
+              "error_message": "java.lang.AssertionError: Given error message key is incorrect\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat features.step_definitions.BookingSteps.errorMessageAppears(BookingSteps.java:127)\r\n\tat ✽.error message \"invalid\" appears(file:///C:/Users/Sunil/IdeaProjects/KATA_Testing_Java/src/test/java/features/booking.feature:46)\r\n",
+              "duration": 5000000,
               "status": "failed"
             },
             "line": 46,
