@@ -3,54 +3,141 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-05T10:46:40.530Z",
-        "line": 4,
-        "name": "Option to book a room is available on the page",
+        "line": 3,
+        "name": "open the application",
         "description": "",
-        "id": "book-a-room;option-to-book-a-room-is-available-on-the-page",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9880000000,
+              "duration": 6595000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "I am on the home page",
             "match": {
               "location": "features.step_definitions.BookingSteps.i_am_on_the_home_page()"
             },
             "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-08T13:58:52.565Z",
+        "line": 41,
+        "name": "book the room for past date",
+        "description": "",
+        "id": "book-a-room;book-the-room-for-past-date",
+        "after": [
+          {
+            "result": {
+              "duration": 652000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.step_definitions.BookingSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I open booking form",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.iOpenBookingForm()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 804000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I browse through the page",
+            "line": 43,
+            "name": "I fill in form with details \"sravs123\", \"potnur\", \"sravs.example@gmail.com\", \"32574185241\"",
             "match": {
-              "location": "features.step_definitions.BookingSteps.i_browse_through_the_page()"
+              "arguments": [
+                {
+                  "val": "\"sravs123\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"potnur\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"sravs.example@gmail.com\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"32574185241\"",
+                  "offset": 77
+                }
+              ],
+              "location": "features.step_definitions.BookingSteps.iFillInFormWithDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 104000000,
+              "duration": 449000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I have the option to book a room",
+            "line": 44,
+            "name": "select 2 days in past",
             "match": {
-              "location": "features.step_definitions.BookingSteps.i_have_the_option_to_book_a_room()"
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 7
+                }
+              ],
+              "location": "features.step_definitions.BookingSteps.selectDaysInPast(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5065000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "book the room",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.bookTheRoom()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Given error message key is incorrect\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat features.step_definitions.BookingSteps.errorMessageAppears(BookingSteps.java:140)\r\n\tat ✽.error message \"invalid\" appears(file:///C:/Users/Sunil/IdeaProjects/KATA_Testing_Java/src/test/java/features/booking.feature:46)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "line": 46,
+            "name": "error message \"invalid\" appears",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid\"",
+                  "offset": 14
+                }
+              ],
+              "location": "features.step_definitions.BookingSteps.errorMessageAppears(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@book"
+            "name": "@booking"
           }
         ]
       }
